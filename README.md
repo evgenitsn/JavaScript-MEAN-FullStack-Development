@@ -6,4 +6,4 @@ Until now it contains:
  - [NodeJS / MongoDB]
 
 [JS Fundamentals]: <https://softuni.bg/courses/javascript-fundamentals>
-[NodeJS Open Course]: <https://softuni.bg/courses/mongo-and-node-js>
+[NodeJS / MongoDB]: <https://softuni.bg/courses/mongo-and-node-js>
