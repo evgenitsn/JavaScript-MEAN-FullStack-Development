@@ -1,0 +1,32 @@
+#input{
+    resize: none;
+    border-style: none;
+}
+
+form{
+    display: inline-block;
+}
+
+input, p{
+    display: block;
+    margin: 20px auto;
+    background-color: transparent;
+    border: 2px solid #234465;
+    color: #234465;
+    height: 40px;
+    font-size: 1.5em;
+    font-family: Calibri;
+    padding-left: 10px;
+
+}
+
+p, #input{
+    border: 2px solid orange;
+    background-color: #234465;
+    width: 263px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    font-size: 1.2em;
+    color: #FFA000;
+}

@@ -1,0 +1,148 @@
+body{
+	background-color: #00923e;
+	font-family: sans-serif;
+}
+
+table {
+    border-spacing: 0;
+    border:solid black 1px;
+    border-radius: 15px;
+}
+
+th,td{
+	padding: 8px 12px;
+	border: 1px solid #000;
+}
+
+th{
+    border-top: none;
+	background-color: #f8c711;
+}
+
+thead tr:first-child th:first-child {
+    border-radius: 15px 0 0 0;
+}
+thead tr:first-child th:last-child {
+    border-radius: 0 15px 0 0;
+}
+tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 15px;
+}
+tbody tr:last-child td:last-child {
+    border-radius: 0 0 15px 0;
+}
+
+td:first-child {
+     border-left: none;
+}
+
+tr:nth-child(even) {
+	background-color: #c8c8c8;
+}
+
+tr:nth-child(odd) {
+	background: #ffffff;
+}
+
+th:nth-child(even){
+	text-align: center;
+}
+
+th:nth-child(1), 
+td:nth-child(1),
+td:nth-child(5){
+	text-align: right;
+}
+
+td:nth-child(even),
+th:nth-child(even){
+	text-align: center;
+}
+
+th:nth-child(3){
+	text-align: left;
+}
+
+select:disabled{
+	color: red;
+}
+
+select{
+	color: green;
+	height: 30px;
+}
+
+.button {
+    background-color: #f00;
+    width: 25px;
+    height: 25px;
+    border-radius: 120px;
+}
+
+.active-button {
+    background-color: green;
+    width: 25px;
+    height: 25px;
+    border-radius: 120px;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    font-weight: 700px;
+    padding-top: 6px;
+}
+
+#brasil:after{
+    content: url('images/brasil.png');
+    padding-left: 2px;
+}
+
+#argentina:after{
+    content: url('images/argentina.png');
+    padding-left: 2px;
+}
+
+#bosnia:before{
+    content: url('images/bosnia.png');
+    padding-right: 2px;
+}
+
+#spain:after{
+    content: url('images/spain.png');
+    padding-left: 2px;
+}
+
+#netherlands:before{
+    content: url('images/netherlands.png');
+    padding-right: 2px;
+}
+
+#italy:after{
+    content: url('images/italy.png');
+    padding-left: 2px;
+}
+
+#england:before{
+    content: url('images/england.png');
+    padding-right: 2px;
+}
+
+#mexico:before{
+    content: url('images/mexico.png');
+    padding-right: 2px;
+}
+
+#portugal:before{
+    content: url('images/portugal.png');
+    padding-right: 2px;
+}
+
+#germany:after{
+    content: url('images/germany.png');
+    padding-left: 2px;
+}

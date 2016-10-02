@@ -1,0 +1,23 @@
+body{
+	background-color: #ffc0cb;
+}
+
+figure {
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+
+figcaption{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+audio{
+	display: block;
+}
+
+h1{
+	text-align: center;
+}

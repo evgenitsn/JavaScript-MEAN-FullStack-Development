@@ -1,0 +1,56 @@
+body{
+	background-image: url("colorful_dots_on_black.jpg");
+	padding: 0;
+	margin: 0;
+}
+
+body>header{
+	text-align: center;
+	background: rgba(255,0,0,1);
+	background: -moz-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(0,128,0,1) 33%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(33%, rgba(255,0,0,1)), color-stop(33%, rgba(0,128,0,1)), color-stop(66%, rgba(0,128,0,1)), color-stop(66%, rgba(0,0,255,1)), color-stop(100%, rgba(0,0,255,1)));
+	background: -webkit-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(0,128,0,1) 33%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(0,128,0,1) 33%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(0,128,0,1) 33%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(0,128,0,1) 33%, rgba(0,128,0,1) 66%, rgba(0,0,255,1) 66%, rgba(0,0,255,1) 100%);
+	font-size: 72px;
+	font-family: sans-serif;
+	height: 100px;
+	margin: 0;
+	font-weight: 700px;
+	color: yellow;
+
+}
+
+aside{
+	float: left;
+	margin-top: 20px;
+}
+
+article, aside{
+	background-color: white;
+	border-radius: 20px
+}
+
+section{
+	float: right;
+	margin-right: 15%;
+	width: 60%;
+	align-items: center;
+}
+
+article>header{
+	border-radius: 15px;
+	background-color: red;
+	color: white;
+	font-size: 28px;
+}
+
+article{
+	margin-top: 15px;
+	padding: 15px;
+}
+
+article>header{
+	padding-left: 15px;
+}
