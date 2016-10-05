@@ -17,34 +17,36 @@ function equalNeighbors (input) {
     return 0
   }
 
+
   let count = 0
   for (let r = 0; r <= matrix.length - 1; r++) {
     for (let c = 0; c <= matrix[r].length - 1; c++) {
       // not last col
       if (c < matrix[r].length - 1) {
-        count += checkRight(matrix, r, c)
+        count += checkRight(matrix, r, c);
       }
       // not last row
       if (r < matrix.length - 1) {
-        count += checkDown(matrix, r, c)
+        count += checkDown(matrix, r, c);
       }
       // last col
       if (c === matrix[r].length) {
         if (r < matrix.length) {
-          count += checkDown(matrix, r, c)
+          count += checkDown(matrix, r, c);
         }
       }
       // last row
       if (r === matrix.length) {
         if (c < matrix[r].length) {
-          count += checkRight(matrix, r, c)
+          count += checkRight(matrix, r, c);
         }
       }
     }
   }
-  console.log(count)
+  console.log(count);
 }
 
 equalNeighbors(['2 2 5 7 4',
   '4 0 5 3 4',
-  '2 5 5 4 2'])
+  '2 5 5 4 2']
+)

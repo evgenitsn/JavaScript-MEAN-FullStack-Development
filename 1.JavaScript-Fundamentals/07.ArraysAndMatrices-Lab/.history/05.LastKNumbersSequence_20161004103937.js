@@ -18,3 +18,4 @@ function lastKNumbersSequence ([num, len]) {
 }
 
 lastKNumbersSequence([6, 3])
+

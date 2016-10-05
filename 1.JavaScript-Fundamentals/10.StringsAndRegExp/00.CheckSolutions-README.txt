@@ -1,0 +1,2 @@
+To find this problems and check the solutions please open this site:
+https://judge.softuni.bg/Contests/314/Strings-and-Regular-Expressions
