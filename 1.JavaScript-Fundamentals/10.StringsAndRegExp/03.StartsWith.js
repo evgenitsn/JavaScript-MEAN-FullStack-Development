@@ -1,7 +1,3 @@
-/**
- * Created by evgeni.tsn on 04-Oct-16.
- */
-
 function startsWith (input) {
   let [text, substring] = [input[0], input[1]]
   if (text.startsWith(substring)) {

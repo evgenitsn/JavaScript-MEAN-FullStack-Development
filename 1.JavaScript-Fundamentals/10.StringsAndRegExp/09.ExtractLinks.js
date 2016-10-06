@@ -1,5 +1,5 @@
 function extractTheLinks (input) {
-  let regex = /www\.[A-Za-z0-9\-]+\.[a-z]+(?:\.[a-z]+)*/g;
+  let regex = /www\.[A-Za-z0-9\-]+\.[a-z]+(?:\.[a-z]+)*/g
   let links = []
   let match
   for (let line of input) {
@@ -16,4 +16,4 @@ console.log(extractTheLinks(
     'You can also support our partners:',
     'Internet - www.internet.com',
     'WebSpiders - www.webspiders101.com',
-    'Sentinel - www.sentinel.-ko ']));
+    'Sentinel - www.sentinel.-ko ']))

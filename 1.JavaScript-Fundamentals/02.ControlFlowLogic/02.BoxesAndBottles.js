@@ -1,3 +1,3 @@
-function box([n, k]){
-    console.log(Math.ceil(n / k));
+function box ([n, k]) {
+  console.log(Math.ceil(n / k))
 }

@@ -1,7 +1,3 @@
-/**
- * Created by evgeni.tsn on 04-Oct-16.
- */
-
 function capitalizeWords (input) {
   function toTitleCase (str) {
     return str.replace(/\w\S*/g, (txt) => {

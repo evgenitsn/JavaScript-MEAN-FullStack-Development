@@ -1,7 +1,3 @@
-/**
- * Created by evgeni.tsn on 04-Oct-16.
- */
-
 function captureTheNumber (input) {
   let regex = new RegExp(/\d+/g)
   let results = []

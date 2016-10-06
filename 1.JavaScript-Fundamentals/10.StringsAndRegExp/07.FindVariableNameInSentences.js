@@ -1,7 +1,3 @@
-/**
- * Created by evgeni.tsn on 04-Oct-16.
- */
-
 function variableNameInSentences (input) {
   let regex = new RegExp(/_(\w+)/g)
   let text = input[0]

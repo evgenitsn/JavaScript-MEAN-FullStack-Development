@@ -1,7 +1,7 @@
-function matchAllWords(text) {
-  if (Array.isArray(text)) text = text[0];
-  let words = text.match(/\w+/g);
-  return words.join('|');
+function matchAllWords (text) {
+  if (Array.isArray(text)) text = text[0]
+  let words = text.match(/\w+/g)
+  return words.join('|')
 }
 
-matchAllWords("Hello, how are you?")
+matchAllWords('Hello, how are you?')
