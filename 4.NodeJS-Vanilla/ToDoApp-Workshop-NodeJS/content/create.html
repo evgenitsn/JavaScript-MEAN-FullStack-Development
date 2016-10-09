@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Create new TODO</title>
+</head>
+
+<body>
+  <h1>ToDo List App</h1>
+  <a href="/">Go back to index</a><br>
+  <a href="/all">List All Todos</a>
+  <p>Create View</p>
+
+  <p>TODO Form</p>
+  <form action="/create" method="post" enctype="multipart/form-data">
+    <input type="text" id="title" name="Title"><br>
+    <input type="text" id="desc" name="Description"><br>
+    <select name="State">
+    <option selected="selected" value="Pending">Pending</option>
+    <option value="Done">Done</option>
+  </select><br>
+    <input name="img" type="file"><br>
+    <!--<button type="button" name="Submit" value="Submit" onclick="submitForm()">Create</button>-->
+    <input type="submit" name="Submit" value="Submit">
+    </form>
+  <p id="result"></p>
+  <!--<script>
+  function submitForm() {
+    var http = new XMLHttpRequest();
+    http.open("POST", "/create", true);
+    http.setRequestHeader("Content-type","multipart/form-data");
+    let title = document.getElementById('title').value
+    let desc = document.getElementById('desc').value
+    let state = 'Pending'
+    var params = `Title=${title}&Description=${desc}&State=${state}`
+    http.send(params);
+    http.onload = function() {
+        document.getElementById("result").innerHTML += http.responseText+"<br>"
+    }
+}
+</script>-->
+</body>
+
+</html>
