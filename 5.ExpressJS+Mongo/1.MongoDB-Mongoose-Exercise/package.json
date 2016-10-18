@@ -1,0 +1,16 @@
+{
+  "name": "01.MongoDB-Mongoose-Exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "EN",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.8.0",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "dependencies": {
+    "mongoose": "4.6.4"
+  }
+}
