@@ -1,0 +1,1 @@
+You can check solutions in JS Advanced section here https://judge.softuni.bg/Contests#!/List/ByCategory/56/JavaScript-Core
