@@ -2,8 +2,9 @@ function timer () {
   $('#start-timer').on('click', start)
   $('#stop-timer').on('click', stop)
   let started = false
-
-  let seconds, minutes, hours = [0, 0, 0]
+  let seconds = 0
+  let minutes = 0
+  let hours = 0
   let timer
   function start () {
     if (!started) {
