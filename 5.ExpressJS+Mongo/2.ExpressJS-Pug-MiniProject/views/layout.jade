@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/schema.min.css')
+    link(rel='stylesheet', href='/stylesheets/custom.css')
+    link(rel='stylesheet', href='/stylesheets/datepicker.css')
+    link(rel='stylesheet', href='/stylesheets/site.css')  
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/javascripts/global.js')
+    script(src='/javascripts/less.js')
+  body
+    header.nav    
+      div.container
+        div.row-fluid.col8
+          nav
+            div.form-element-group
+              a(href="/list") List images
+            div.form-element-group
+              a(href="/") Add new image
+            div.form-element-group
+              form(method='post', action='/search-by-tag') 
+                input.form-element(placeholder="Enter tag" name="searchByTag" type="text")
+                span.form-group-btn
+                  button.btn.btn-default(type="submit") Search by tag
+            div.form-element-group.col3.offset1
+              a(href='/search-in-period') Search images by creation date
+    block content
+

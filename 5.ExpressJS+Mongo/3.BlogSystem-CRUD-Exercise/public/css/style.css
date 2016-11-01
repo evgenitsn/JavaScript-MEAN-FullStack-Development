@@ -1,0 +1,43 @@
+body{
+    font-size: 20px;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+.container {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li:after {
+    content: "\00a0";
+}
+
+.delimiter {
+    margin-right: 120px;
+}
+
+#logout-form {
+    display: inline-block
+}
+
+/*#logo {*/
+    /*width: 25px;*/
+    /*height: 25px;*/
+/*}*/
+
+/*.signup-logo{*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+/*}*/

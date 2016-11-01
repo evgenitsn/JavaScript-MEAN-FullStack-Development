@@ -1,0 +1,16 @@
+extends ../shared/layout
+block main-content
+  h1 Edit Article:
+  if (info)
+    form(method="post" action="/article/edit/"+info.articleId)
+      label(for="title") Title
+      br
+      input(type="text" name="title" id="title" value=info.title)
+      br
+      label(for="content") Content
+      br
+      input(type="text" name="content" id="content" value=info.content)
+      br
+      input(type="submit" value="Create")
+  else
+    h3 No such id in DB

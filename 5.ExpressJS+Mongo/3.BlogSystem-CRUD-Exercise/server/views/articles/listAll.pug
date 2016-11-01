@@ -1,0 +1,9 @@
+extends ../shared/layout
+block main-content
+  h1 All Articles
+  ul
+    each val in list
+      li Title: #{val.title}
+      ul
+        li Content: #{val.content}
+        li Author: #{val.author}

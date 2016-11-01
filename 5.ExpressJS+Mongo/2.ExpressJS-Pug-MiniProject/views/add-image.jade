@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    div.container
+        hr.col6
+        div.row-fluid
+            form.col6(method="post", action="/")
+                div.form-group
+                    label(for='url') Picture URL
+                    input.form-element(placeholder="Enter picture url" name="url" type="text")
+                div.form-group
+                    label(for='description') Description
+                    input.form-element(placeholder="Enter picture description" name="description" type="text")
+                div.form-group
+                    label(for='createdOn') Picture date
+                    input.form-element.col4(placeholder="Date taken" name="createdOn" id='datepicker' type="text")
+                div.form-group
+                    label(for='tags') Tags
+                    input.form-element(placeholder="Enter tags separated by comma" name="tags" type="text")
+                button.btn.btn-primary(type="submit") Submit
+    script(src='/javascripts/dates.js')
+    script(src='/javascripts/datepicker.js')
+    script(type="text/javascript").
+        var single = new DatePicker(
+                {
+                    dataFields: [document.getElementById('datepicker')],
+                    firstDay: 1,
+                    parser: Dates,
+                    format: 'dd MMMM yyyy',
+                    minDate: new Date('2000-01-01'),
+                    maxDate: new Date('2020-12-31'),
+                    yearRange: [2000, 2020]
+                })

@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  div.container
+    if(images.length)
+      table.table.table-hover
+        thead
+          tr
+            th Description
+            th Created on
+            th Link
+            th Tags
+        tbody
+          each image in images          
+            tr
+              td #{image.description}
+              td #{dateFormat(image.createdOn)}
+              td 
+                a(href="#{image.url}") Link             
+              td
+                each tag, i in image.tags
+                  a(href="/search-by-tag/#{tag}" ) #{tag}
+                  if i+1 < image.tags.length
+                    = ', '
+                  else
+                    = ''
+    else
+      p No pictures match the seach criteria

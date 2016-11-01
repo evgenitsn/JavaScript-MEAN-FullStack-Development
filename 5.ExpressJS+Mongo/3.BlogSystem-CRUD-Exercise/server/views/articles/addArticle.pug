@@ -1,0 +1,13 @@
+extends ../shared/layout
+block main-content
+  h1 Create Article
+  form(method="post" action="/article/create")
+    label(for="title") Title
+    br
+    input(type="text" name="title" id="title")
+    br
+    label(for="content") Content
+    br
+    input(type="text" name="content" id="content")
+    br
+    input(type="submit" value="Create")

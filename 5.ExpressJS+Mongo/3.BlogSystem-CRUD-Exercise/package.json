@@ -1,0 +1,30 @@
+{
+  "name": "blog-system-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "author": "EN",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "cookie-parser": "1.4.3",
+    "crypto": "0.0.3",
+    "express": "4.14.0",
+    "express-paginate": "^0.2.2",
+    "express-session": "1.14.1",
+    "mongoose": "4.6.5",
+    "mongoose-auto-increment": "5.0.1",
+    "mongoose-paginate": "5.0.3",
+    "paginate": "0.2.0",
+    "passport": "0.3.2",
+    "passport-facebook": "2.1.1",
+    "passport-local": "1.0.0",
+    "pug": "2.0.0-beta6",
+    "querystring": "0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}

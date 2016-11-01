@@ -1,0 +1,11 @@
+extends ../shared/layout
+block main-content
+  h1 Details:
+  if (info)
+    p Title: #{info.title}
+    p Content: #{info.content}
+    p Author: #{info.author}
+    if (info.author === currentUser)
+      a(href="/article/edit/"+info.articleId) Edit
+  else
+    h3 No such id in DB

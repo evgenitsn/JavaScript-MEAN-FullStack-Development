@@ -1,0 +1,16 @@
+//- This examples makes use of Bootstrap 3.x pagination classes
+
+if paginate.hasPreviousPages || paginate.hasNextPages(pageCount)
+  .navigation.well-sm#pagination
+    ul.pager
+      if paginate.hasPreviousPages
+        li.previous
+          a(href=paginate.href(true)).prev
+            |  Previous Page
+      if pages
+        each page in pages
+          a(href=page.url)= page.number
+      if paginate.hasNextPages(pageCount)
+        li.next
+          a(href=paginate.href()).next
+            | Next Page

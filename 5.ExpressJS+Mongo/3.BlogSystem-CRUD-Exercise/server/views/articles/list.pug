@@ -1,0 +1,16 @@
+extends ../shared/layout
+block main-content
+  h1 All Articles
+  ul
+    each article in articles
+      li Title:  #{article.title}
+      ul
+        li Content: #{article.content}
+      ul
+        li Author: #{article.author}
+      ul
+        li
+          a(href="details/"+article.articleId) Details
+        if (article.author === currentUser)
+          a(href="edit/"+article.articleId) Edit
+  include _paginate
