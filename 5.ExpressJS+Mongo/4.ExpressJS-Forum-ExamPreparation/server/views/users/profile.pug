@@ -1,0 +1,10 @@
+extends ../shared/layout
+block main-content
+  p Username: #{user.username}
+  p Firstname: #{user.firstName}
+  p Lastname: #{user.lastName}
+  hr
+  p All threads from #{user.firstName} #{user.lastName}
+  each v in threads[0]
+      p(style="font-weight: 900") Title: #{v.title}
+      a(href="/post/"+v.threadId+"/"+v.title style="font-style: italic") Link to full post

@@ -1,0 +1,12 @@
+extends  ../shared/layout
+block main-content
+  h2 Welcome to my shitty site!
+
+  h3 Latest 5 Posts
+    ul
+      each val in list.sort(function (a,b) {return new Date(b.lastCommented) - new Date(a.lastCommented)} )
+        li Title: #{val.title}
+        a(href="/post/" + val.threadId + '/' + val.title) More Details
+
+  h3
+   a(href="/list") List all started threads

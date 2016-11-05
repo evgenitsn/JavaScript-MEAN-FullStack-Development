@@ -1,0 +1,16 @@
+extends ../shared/layout
+block main-content
+  h3 Edit Article:
+  if (info)
+    form(method="post" action="/edit/" + info.threadId + "/" + info.title)
+      label(for="title") Title
+      br
+      input(type="text" name="title" id="title" value=info.title)
+      br
+      label(for="content") Content
+      br
+      textarea(cols="40" rows="10" name="content" id="content") #{info.content}
+      br
+      input(type="submit" value="Create")
+  else
+    h3 No such id in DB

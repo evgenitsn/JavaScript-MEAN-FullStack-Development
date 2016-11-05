@@ -1,0 +1,15 @@
+extends  ../shared/layout
+block main-content
+  h3 All admins
+  a(href="/admins/all") View all admins
+  br
+  form(method="post" action="/admins/add")
+    label(for="addedAdmin") Add Admin
+    br
+    input(type="text" name="addedAdmin" id="addedAdmin")
+    br
+    label(for="removedAdmin") Remove Admin
+    br
+    input(type="text" name="removedAdmin" id="removedAdmin")
+    br
+    input(type="submit" value="Change admin status")

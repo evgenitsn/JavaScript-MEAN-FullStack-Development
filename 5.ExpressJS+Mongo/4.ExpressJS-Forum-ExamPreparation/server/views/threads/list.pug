@@ -1,0 +1,18 @@
+extends ../shared/layout
+block main-content
+  h3 All Articles
+  ul
+    each val in list.sort(function (a,b) {return new Date(b.lastCommented) - new Date(a.lastCommented)} )
+      if(admin)
+
+      li Title: #{val.title}
+      ul
+        li Content: #{val.content}
+        li Author: #{val.author}
+        li Views: #{val.counter}
+        if (val.comments.length > 0)
+          li Last Commented: #{val.lastCommented.toLocaleString()}
+          li Comments Count: #{val.comments.length}
+        li
+          a(href="/post/" + val.threadId + '/' + val.title) More Details
+      hr
