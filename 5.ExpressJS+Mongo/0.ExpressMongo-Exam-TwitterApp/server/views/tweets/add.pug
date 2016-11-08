@@ -1,0 +1,9 @@
+extends ../shared/layout
+block main-content
+  h3 Create New Tweet
+  form(method="post" action="/tweet")
+    label(for="content") Tweet (up to 140 chars)
+    br
+    textarea(cols="40" rows="10" maxlength="140" name="content" id="content")
+    br
+    input(type="submit" value="Create")

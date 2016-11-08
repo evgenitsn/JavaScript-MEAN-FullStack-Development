@@ -1,0 +1,46 @@
+body{
+    font-size: 20px;
+}
+
+h1 {
+    color: #1e6116;
+}
+
+.container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li:after {
+    content: "\00a0";
+}
+
+.delimiter {
+    margin-right: 70px;
+}
+
+form {
+    display: inline-block
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+table{
+    border: 1px solid black;
+}

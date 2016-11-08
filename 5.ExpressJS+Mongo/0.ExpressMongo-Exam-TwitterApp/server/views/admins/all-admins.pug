@@ -1,0 +1,12 @@
+extends  ../shared/layout
+block main-content
+  h3 All admins
+  a(href="/admins/add") Add / Remove Admins
+  br
+  br
+  br
+  p List of All Admins:
+  ul
+  each admin in admins
+    li
+      a(href="/profile/"+admin.username) #{admin.username}

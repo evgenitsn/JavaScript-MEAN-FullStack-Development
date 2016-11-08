@@ -1,0 +1,39 @@
+extends ../shared/layout
+block main-content
+  if (user)
+    p Username: #{user[0].username}
+    p First name: #{user[0].firstName}
+    p Last name: #{user[0].lastName}
+    p(style="color:green") Note: Views are counting only in '/' page
+    hr
+    p All tweets: #{info.length}
+    hr
+    each v in info.reverse()
+      p Author: #{v.author.username}
+      p Tweet: #{v.content}
+      p Views: #{v.views}
+      p Likes: #{v.likes}
+      if(user)
+        ul.menu
+          li.delimiter
+          li
+            if(user)
+              form#like-form(method="POST" action='/like/' + v._id)
+                a(href="javascript:document.getElementById('like-form').submit()") Like
+          li.delimiter
+          li
+            if(user)
+              form#dislike-form(method="POST" action='/dislike/' + v._id)
+                a(href="javascript:document.getElementById('dislike-form').submit()") Dislike
+          li.delimiter
+            li
+              if(adminStatus)
+                a(href='/edit/' + v._id) Edit
+          li.delimiter
+          li
+            if(adminStatus)
+              form#delete-profile-form(method="POST" action='/delete/' + v._id)
+                a(href="javascript:document.getElementById('delete-profile-form').submit()") Delete
+      hr
+  else
+    p Please Login

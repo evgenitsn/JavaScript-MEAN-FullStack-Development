@@ -1,0 +1,37 @@
+extends  ../shared/layout
+block main-content
+  h2 Welcome to Twitter!
+  a(href="/tweet") Click here to add new tweet
+  if(list.length >0)
+    h3 Latest 100 Tweets
+  each val in list.reverse()
+    ul
+      li Author: #{val.author.username}
+      li Content: #{val.content}
+      li Tags: #{val.tags}
+      li Date: #{val.date.toLocaleString()}
+      li Views: #{val.views}
+      li Likes: #{val.likes}
+    hr
+    if(user)
+      ul.menu
+        li
+        li.delimiter
+          if (user)
+            form(id="like"+val._id method="POST" action='/like/' + val._id)
+              a(href="javascript:document.getElementById('like"+val._id+"').submit()") Like
+        li
+        li.delimiter
+          if (user)
+            form(id="dlike"+val._id method="POST" action='/dislike/' + val._id)
+              a(href="javascript:document.getElementById('dlike"+val._id+"').submit()") Dislike
+        li
+          li.delimiter
+            if(adminStatus)
+              a(href='/edit/' + val._id) Edit
+        li
+        li.delimiter
+          if(adminStatus)
+            form(id="del"+val._id method="POST" action='/delete/' + val._id)
+              a(href="javascript:document.getElementById('del"+val._id+"').submit()") Delete
+    hr

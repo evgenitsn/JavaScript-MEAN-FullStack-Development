@@ -1,0 +1,16 @@
+extends ../shared/layout
+block main-content
+  h3 All Tweets
+  ul
+
+  if(info.length > 0)
+    each val in info.reverse()
+      li Author: #{val.author.username}
+        li Content: #{val.content}
+        li Tags: #{val.tags}
+        li Date: #{val.date.toLocaleString()}
+        hr
+
+  else
+    li There are no tweets with this tag
+    a(href="/tweet") Be the first to create one :)

@@ -1,0 +1,32 @@
+extends ../shared/layout
+block main-content
+  h3 Details:
+  if (info)
+    p Title: #{info.title}
+    p Content: #{info.content}
+    p Author: #{info.author}
+    p Date: #{info.date}
+    p Views: #{info.counter}
+    if (info.author === currentUser)
+      a(href="/edit/" + info.threadId + "/" + info.title) Edit
+    else if (adminStatus)
+      a(href="/edit/" + info.threadId + "/" + info.title) Administration Edit
+    p Total Comments #{info.comments.length}
+    if (currentUser)
+      form(method="post" action="/addComment/" + info.threadId + "/" + info.title)
+        label(for="commentContent") Add Comment
+        br
+        textarea(cols="40" rows="2" name="commentContent" id="commentContent")
+        br
+        input(type="submit" value="Add Comment")
+    else
+      a(href="/users/login") Please login to comment
+    ul
+    each entry in info.comments.sort(function (a,b) {return new Date(b.date) - new Date(a.date)} )
+      li Content: #{entry.content}
+      li Posted by:
+        a(href="/profile/" + entry.author) #{entry.author}
+        | - #{entry.date.toLocaleString()}
+      hr
+  else
+    h3 No such id in DB
