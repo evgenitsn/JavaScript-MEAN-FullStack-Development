@@ -1,6 +1,5 @@
-/**
- * Created by evgeni.tsn on 26-Oct-16.
- */
+/*eslint no-undef: */
+//noinspection Eslint
 let createCalculator = require('../4.Add-Substract').createCalculator
 let expect = require('chai').expect
 

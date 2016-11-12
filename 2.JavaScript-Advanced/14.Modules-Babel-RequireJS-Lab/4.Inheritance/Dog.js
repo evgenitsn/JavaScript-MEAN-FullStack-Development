@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let Entity = require('./Entity')
 
 class Dog extends Entity {

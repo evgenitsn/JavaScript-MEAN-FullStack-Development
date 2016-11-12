@@ -1,6 +1,4 @@
-/**
- * Created by evgeni.tsn on 26-Oct-16.
- */
+/*eslint no-undef: */
 let rgbToHexColor = require('../3.RGBtoHEX').rgbToHexColor
 let expect = require('chai').expect
 

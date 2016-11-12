@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let BaseElement = require('./BaseElement.js')
 
 class Footer extends BaseElement {
@@ -9,7 +10,7 @@ class Footer extends BaseElement {
 
   getElementString () {
     return $('<footer>')
-      .html('Copyright &copy; ' + this.message)
+      .html(`Copyright &copy; ${this.message}`)
   }
 }
 

@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let Article = require('./Article.js')
 
 class ImageArticle extends Article {

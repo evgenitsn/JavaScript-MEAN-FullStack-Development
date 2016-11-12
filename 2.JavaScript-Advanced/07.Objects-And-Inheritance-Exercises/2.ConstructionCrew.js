@@ -1,7 +1,6 @@
 function solve (obj) {
   if (obj.handsShaking) {
-    let neededAlcohol = 0.1 * obj.weight * obj.experience
-    obj.bloodAlcoholLevel += neededAlcohol
+    obj.bloodAlcoholLevel += 0.1 * obj.weight * obj.experience
     obj.handsShaking = false
   }
   return obj

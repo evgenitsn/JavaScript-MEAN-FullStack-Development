@@ -1,3 +1,4 @@
+//noinspection Eslint
 function solve () {
   class Person {
     constructor (name, email) {
@@ -19,7 +20,7 @@ function solve () {
 
     toString () {
       let baseStr = super.toString().slice(0, -1)
-      return baseStr + `, subject: ${this.subject})`
+      return `${baseStr}\`, subject: $\{this.subject})\``
     }
   }
 
@@ -31,7 +32,7 @@ function solve () {
 
     toString () {
       let baseStr = super.toString().slice(0, -1)
-      return baseStr + `, course: ${this.course})`
+      return `${baseStr}\`, course: $\{this.course})\``
     }
   }
 

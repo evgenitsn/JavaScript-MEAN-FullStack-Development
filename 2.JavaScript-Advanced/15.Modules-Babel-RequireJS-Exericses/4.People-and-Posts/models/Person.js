@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 class Person {
   constructor (name, age) {
     this.name = name
@@ -7,7 +8,7 @@ class Person {
   addToSelector (selector) {
     let personObj =
       $('<div>')
-        .addClass('person ' + this.name)
+        .addClass(`person ${this.name}`)
         .append($('<p>')
           .addClass('name')
           .text(this.name))
@@ -15,7 +16,7 @@ class Person {
           .addClass('age')
           .text(this.age))
         .append($('<div>')
-          .addClass('posts ' + this.name))
+          .addClass(`posts ${this.name}`))
 
     $(selector)
       .append(personObj)

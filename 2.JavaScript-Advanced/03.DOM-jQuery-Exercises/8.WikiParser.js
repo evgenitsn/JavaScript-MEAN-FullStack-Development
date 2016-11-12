@@ -1,3 +1,5 @@
+/*eslint no-undef: */
+//noinspection Eslint
 function wikiParser (selector) {
   let text = $(selector).text()
   let formatted = text

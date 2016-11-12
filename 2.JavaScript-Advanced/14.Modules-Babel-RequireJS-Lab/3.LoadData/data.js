@@ -121,4 +121,5 @@ let data = [
   }
 ]
 
+//noinspection Eslint
 module.exports = data

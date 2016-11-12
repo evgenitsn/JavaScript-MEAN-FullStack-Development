@@ -25,4 +25,5 @@ class Employee {
   }
 }
 
+//noinspection Eslint
 module.exports = Employee

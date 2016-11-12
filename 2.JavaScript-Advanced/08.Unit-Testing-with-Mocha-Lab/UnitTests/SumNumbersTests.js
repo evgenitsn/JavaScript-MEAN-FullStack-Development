@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let sum = require('../1.Sum-Numbers').sum
 let expect = require('chai').expect
 

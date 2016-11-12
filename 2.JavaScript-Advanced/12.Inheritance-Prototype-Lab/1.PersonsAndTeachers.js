@@ -1,3 +1,4 @@
+//noinspection Eslint
 function personAndTeacherClasses () {
   class Person {
     constructor (name, email) {

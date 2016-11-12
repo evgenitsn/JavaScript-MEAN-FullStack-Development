@@ -1,3 +1,4 @@
+//noinspection Eslint
 function solve () {
   class Employee {
     constructor (name, age) {

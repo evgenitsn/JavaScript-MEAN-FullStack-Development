@@ -1,3 +1,5 @@
+/*eslint no-undef: */
+/*eslint no-unused-vars: */
 let Entity = require('./Entity')
 let Dog = require('./Dog')
 

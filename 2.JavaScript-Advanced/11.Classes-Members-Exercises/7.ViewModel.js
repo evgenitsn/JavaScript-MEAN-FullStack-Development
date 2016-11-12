@@ -1,5 +1,7 @@
+//noinspection Eslint
 let $ = require('jquery')
 
+/*eslint no-unused-vars: */
 class Textbox {
   constructor (selector, regex) {
     this.selector = selector

@@ -21,7 +21,8 @@ function validateRequest (obj) {
 }
 
 // Example:
-console.log(validateRequest({
+console.log(validateRequest(
+  {
     method: 'GET',
     uri: 'svn.public.catalog',
     version: 'HTTP/1.1',

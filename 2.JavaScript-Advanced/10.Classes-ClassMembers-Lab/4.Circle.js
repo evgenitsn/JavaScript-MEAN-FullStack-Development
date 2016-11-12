@@ -1,3 +1,5 @@
+/*eslint no-undef: */
+/*eslint no-unused-vars: */
 class Circle {
   constructor(radius) {
     this.radius = radius

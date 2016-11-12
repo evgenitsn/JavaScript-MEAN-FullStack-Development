@@ -23,8 +23,9 @@ function makeIterable (obj) {
 // Example:
 let obj = { name: 'gosho', '13': true, book: 'Lord of the Drinks', 2: 2, age: 15, passportNumber: 12345678 }
 let iterator = makeIterable(obj)
+//noinspection Eslint
 while (true) {
   let res = iterator.next()
-  if (res.done) break
+  if (res.done) {break}
   console.log(res.value)
 }

@@ -23,4 +23,5 @@ let mathEnforcer = {
   }
 }
 
+//noinspection Eslint
 module.exports = { mathEnforcer }

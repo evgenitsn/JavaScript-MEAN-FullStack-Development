@@ -1,8 +1,9 @@
+/*eslint no-undef: */
 let BaseElement = require('./BaseElement.js')
 
 class Article extends BaseElement {
   constructor (title, content) {
-    super();
+    super()
     this.title = title
     this.content = content
     this.timestamp = new Date()

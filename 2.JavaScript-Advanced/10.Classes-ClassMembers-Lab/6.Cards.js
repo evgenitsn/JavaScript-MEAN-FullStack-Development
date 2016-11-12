@@ -6,7 +6,7 @@
       HEARTS: '\u2665',
       SPADES: '\u2660'
     }
-  let Faces = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+  let Faces = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
   class Card {
     constructor (face, suit) {
       this.suit = suit
@@ -18,8 +18,7 @@
     }
 
     set face (face) {
-      if (!Faces.includes(face))
-        throw new Error('Invalid card face: ' + face)
+      if (!Faces.includes(face)) {throw new Error(`Invalid card face: ${face}`)}
       this._face = face
     }
 
@@ -29,8 +28,7 @@
 
     set suit (suit) {
       if (!Object.keys(Suits).map(
-          k => Suits[k]).includes(suit))
-        throw new Error('Invalid card suite: ' + suit)
+          k => Suits[k]).includes(suit)) {throw new Error(`Invalid card suite: ${suit}`)}
       this._suit = suit
     }
 

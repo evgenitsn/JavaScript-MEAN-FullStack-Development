@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 class Post {
   constructor (title, body, author) {
     this.title = title
@@ -8,7 +9,7 @@ class Post {
   addToSelector (selector) {
     let postObj =
       $('<div>')
-        .addClass('post ' + this.author)
+        .addClass(`post ${this.author}`)
         .append($('<h3>')
           .addClass('title')
           .text(this.title))

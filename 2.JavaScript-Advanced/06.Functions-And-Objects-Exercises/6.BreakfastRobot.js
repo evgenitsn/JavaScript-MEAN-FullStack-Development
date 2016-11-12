@@ -20,7 +20,7 @@ let breakfast = (() => {
 
   function report () {
     return [...Object.keys(contaminations)]
-      .map(elem => elem + '=' + contaminations[elem])
+      .map(elem => `${elem}=${contaminations[elem]}`)
       .join(' ')
   }
 

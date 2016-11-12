@@ -1,28 +1,30 @@
+/*eslint no-undef: */
+//noinspection Eslint
 function increment (selector) {
   let container = $(selector)
   let fragment = document.createDocumentFragment()
-  let textArea = $("<textarea></textarea>")
-  let incrementBtn = $("<button>Increment</button>")
-  let addBtn = $("<button>Add</button>")
-  let list = $("<ul>")
+  let textArea = $('<textarea></textarea>')
+  let incrementBtn = $('<button>Increment</button>')
+  let addBtn = $('<button>Add</button>')
+  let list = $('<ul>')
 
   textArea.val(0)
-  textArea.addClass("counter")
-  textArea.attr("disabled", true)
-  incrementBtn.addClass("btn")
-  incrementBtn.attr("id", "incrementBtn")
-  addBtn.addClass("btn")
-  addBtn.attr("id", "addBtn")
-  list.addClass("results")
+  textArea.addClass('counter')
+  textArea.attr('disabled', true)
+  incrementBtn.addClass('btn')
+  incrementBtn.attr('id', 'incrementBtn')
+  addBtn.addClass('btn')
+  addBtn.attr('id', 'addBtn')
+  list.addClass('results')
 
-  incrementBtn.on("click", () => {
+  incrementBtn.on('click', () => {
     let value = parseInt(textArea.val())
     textArea.val(++value)
   })
 
-  addBtn.on("click", () => {
+  addBtn.on('click', () => {
     let value = parseInt(textArea.val())
-    let li = $("<li>")
+    let li = $('<li>')
     li.text(value)
     list.append(li)
   })

@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let data = require('./data')
 
 function sort (prop) {

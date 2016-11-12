@@ -1,7 +1,5 @@
-/**
- * Created by evgeni.tsn on 27-Oct-16.
- */
-
+/*eslint no-undef: */
+//noinspection Eslint
 function generateBugManager() {
   let id = 0
   let bugs = []
@@ -63,7 +61,7 @@ function generateBugManager() {
 
   function formatBug(bug) {
     return $('<div>')
-      .attr('id', 'report_' + bug.ID)
+      .attr('id', `report_${bug.ID}`)
       .addClass('report')
       .append($('<div>')
         .addClass('body')
@@ -73,10 +71,10 @@ function generateBugManager() {
         .addClass('title')
         .append($('<span>')
           .addClass('author')
-          .text('Submitted by: ' + bug.author))
+          .text(`Submitted by: ${bug.author}`))
         .append($('<span>')
           .addClass('status')
-          .text(bug.status + ' | ' + bug.severity)))
+          .text(`${bug.status} | ${bug.severity}`)))
   }
 
   return {report, setStatus, remove, sort, output}

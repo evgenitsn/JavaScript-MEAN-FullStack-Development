@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let Person = require('./Person')
 
 class Student extends Person {

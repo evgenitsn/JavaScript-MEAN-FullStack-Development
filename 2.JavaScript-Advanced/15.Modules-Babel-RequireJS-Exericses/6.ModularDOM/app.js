@@ -1,4 +1,5 @@
-// This is working example with index.html
+/*eslint no-undef: */
+/*eslint no-unused-vars: */
 let BaseElement = require('./models/BaseElement.js')
 let TitleBar = require('./models/TitleBar.js')
 let Article = require('./models/Article.js')

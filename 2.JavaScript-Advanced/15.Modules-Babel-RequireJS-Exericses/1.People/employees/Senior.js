@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let Employee = require('./Employee')
 
 class Senior extends Employee {

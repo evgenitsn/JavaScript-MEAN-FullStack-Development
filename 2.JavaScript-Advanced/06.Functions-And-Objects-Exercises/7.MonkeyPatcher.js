@@ -1,3 +1,4 @@
+//noinspection Eslint
 function votingSystem (action) {
   let that = this
   let patcher = (() => {

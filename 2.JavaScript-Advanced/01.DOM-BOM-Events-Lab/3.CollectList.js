@@ -1,13 +1,11 @@
-/**
- * Created by evgeni.tsn on 20-Oct-16.
- */
-
+//noinspection Eslint
 function extractText() {
   let itemNodes =
-    document.querySelectorAll("ul#items li");
+    document.querySelectorAll('ul#items li')
   let textarea =
-    document.querySelector("#result");
+    document.querySelector('#solve')
   for (let node of itemNodes) {
-    textarea.value += node.textContent + "\n";
+    textarea.value += `${node.textContent}
+`
   }
 }

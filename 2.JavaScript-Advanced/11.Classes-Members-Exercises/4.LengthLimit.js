@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: */
 class Stringer {
   constructor (string, length) {
     this.string = string
@@ -32,6 +33,6 @@ class Stringer {
       return '...'
     }
 
-    return this.string.substring(0, this.length)+ '...'
+    return `${this.string.substring(0, this.length)}...`
   }
 }

@@ -1,8 +1,10 @@
+/*eslint no-undef: */
+//noinspection Eslint
 function calendar([day, month, year]) {
   let date = new Date(year, month , 0)
   let monthNames =
-    ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"]
+    ['January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December']
 
   let tBody = $('<tbody>')
     .append($('<tr>')
@@ -15,7 +17,7 @@ function calendar([day, month, year]) {
       .append($('<th>').text('Sun')))
 
   let calendar = $('<table>')
-    .append($('<caption>').text(monthNames[date.getMonth()] + ' ' + date.getFullYear()))
+    .append($('<caption>').text(`${monthNames[date.getMonth()]} ${date.getFullYear()}`))
     .append(tBody)
 
   let firstDay = (new Date(year, month - 1, 1).getDay() - 1)

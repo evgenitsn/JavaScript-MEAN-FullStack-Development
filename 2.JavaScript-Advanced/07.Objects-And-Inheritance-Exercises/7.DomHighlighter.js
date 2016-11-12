@@ -1,3 +1,5 @@
+/*eslint no-undef: */
+//noinspection Eslint
 function colorize (selector) {
   let element = $(selector)
 
@@ -18,6 +20,7 @@ function colorize (selector) {
     }
   }
 
+  //noinspection Eslint
   while (true) {
     bestSelector.addClass('highlight')
     if (bestSelector.attr('id') == element.attr('id')) {

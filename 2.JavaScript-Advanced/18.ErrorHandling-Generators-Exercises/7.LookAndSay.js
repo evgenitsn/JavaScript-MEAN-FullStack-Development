@@ -1,5 +1,6 @@
 function* lookAndSay (num) {
   num += ''
+  //noinspection Eslint
   while (num = generateNextNode(num)) {
     yield num
   }

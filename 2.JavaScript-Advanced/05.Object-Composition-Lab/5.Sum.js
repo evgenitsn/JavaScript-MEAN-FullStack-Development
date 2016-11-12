@@ -9,9 +9,9 @@ function getModel() {
     add: () => model.action((a, b) => a + b),
     subtract: () => model.action((a, b) => a - b),
     action: function(operation) {
-      let val1 = Number(model.num1.value);
-      let val2 = Number(model.num2.value);
-      model.result.value = operation(val1, val2);
+      let val1 = Number(model.num1.value)
+      let val2 = Number(model.num2.value)
+      model.result.value = operation(val1, val2)
     }
   }
 
@@ -19,11 +19,11 @@ function getModel() {
 }
 
 let obj = getModel()
-obj.init("num1","num2",'result');
-let num1 = document.getElementById('num1');
-let num2 = document.getElementById('num2');
-let res = document.getElementById('result');
+obj.init('num1','num2','result')
+let num1 = document.getElementById('num1')
+let num2 = document.getElementById('num2')
+let res = document.getElementById('result')
 num1.value = 5
 num2.value = 3
-obj.add();
+obj.add()
 console.log(res.value)

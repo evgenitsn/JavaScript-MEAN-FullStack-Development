@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: */
 class SortedList {
   constructor () {
     this.storage = []
@@ -7,6 +8,7 @@ class SortedList {
   add (element) {
     this.storage.push(element)
     this.reSort()
+    //noinspection JSAnnotator
     this.size++
   }
 
@@ -14,6 +16,7 @@ class SortedList {
     if (this.isValidIndex(index)) {
       this.storage.splice(index, 1)
       this.reSort()
+      //noinspection JSAnnotator
       this.size--
     } else {
       throw new Error

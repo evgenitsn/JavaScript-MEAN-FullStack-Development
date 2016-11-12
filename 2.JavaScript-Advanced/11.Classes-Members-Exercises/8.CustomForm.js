@@ -1,5 +1,6 @@
+/*eslint no-unused-vars: */
+//noinspection Eslint
 let $ = require('jquery')
-
 let result = (function () {
   class Textbox {
     constructor (selector, regex) {
@@ -33,7 +34,7 @@ let result = (function () {
   class Form {
     constructor (...textBoxes){
       for (let textBox of textBoxes) {
-        if (!textBox instanceof Textbox) {
+        if (!(textBox instanceof Textbox)) {
           throw new Error('Argument is not an instance of TextBox class')
         }
       }

@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: */
 class Person {
   constructor (firstName, lastName, age, email) {
     this.firstName = firstName

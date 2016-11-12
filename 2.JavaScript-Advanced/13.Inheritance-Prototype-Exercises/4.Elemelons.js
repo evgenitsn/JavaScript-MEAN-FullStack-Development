@@ -1,5 +1,5 @@
+/*eslint no-unused-vars: */
 // function solve () {
-
 class Melon {
   constructor (weight, melonSort) {
     if (new.target === Melon) {

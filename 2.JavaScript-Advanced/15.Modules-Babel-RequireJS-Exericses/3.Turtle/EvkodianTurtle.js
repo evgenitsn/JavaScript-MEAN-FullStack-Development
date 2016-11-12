@@ -1,3 +1,4 @@
+//noinspection Eslint
 let Turtle = require('./Turtle')
 
 class EvkodianTurtle extends Turtle {
@@ -23,8 +24,10 @@ class EvkodianTurtle extends Turtle {
   }
 
   toString () {
-    return super.toString() + `\nEvkodium: ${this._evkodium * this._calculateDensity()}`
+    return `${super.toString()}\`
+Evkodium: $\{this._evkodium * this._calculateDensity()}\``
   }
 }
 
+//noinspection Eslint
 module.exports = EvkodianTurtle

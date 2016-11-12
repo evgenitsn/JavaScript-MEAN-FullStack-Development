@@ -1,11 +1,12 @@
-let Article = require('./Article.js');
+/*eslint no-undef: */
+let Article = require('./Article.js')
 
 class TableArticle extends Article {
   constructor (title, content) {
-    super(title, content);
+    super(title, content)
 
-    this.headings = null;
-    this.data = null;
+    this.headings = null
+    this.data = null
   }
 
   loadData (headings, data) {

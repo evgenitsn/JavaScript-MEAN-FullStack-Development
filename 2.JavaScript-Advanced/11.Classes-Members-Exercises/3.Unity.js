@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: */
 class Rat {
   constructor (name){
     this.name = name
@@ -16,7 +17,8 @@ class Rat {
 
   toString(){
     let result = ''
-    result += this.name + '\n'
+    result += `${this.name}
+`
     for (let rat of this.rats) {
       result += `##${rat}\n`
     }

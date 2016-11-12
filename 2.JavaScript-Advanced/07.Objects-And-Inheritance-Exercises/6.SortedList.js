@@ -1,3 +1,4 @@
+//noinspection Eslint
 function generateLinkedList() {
   return (function () {
     let storage = []

@@ -24,10 +24,7 @@
   }
 
   String.prototype.isEmpty = function () {
-    if (this.length === 0) {
-      return true
-    }
-    return false
+    return this.length === 0
   }
 
   String.prototype.truncate = function (n) {
@@ -45,10 +42,11 @@
     }
   }
 
+  //noinspection JSPrimitiveTypeWrapperUsage
   String.format = function () {
     // console.log(arguments)
-    var argsRaw = Array.prototype.slice.call(arguments)
-    var args = argsRaw.slice(1, argsRaw.length)
+    const argsRaw = Array.prototype.slice.call(arguments)
+    const args = argsRaw.slice(1, argsRaw.length)
     let str = Array.prototype.slice.call(arguments)[0]
     return str.replace(/{(\d+)}/g, function (match, number) {
       if (number <= argsRaw.length) {

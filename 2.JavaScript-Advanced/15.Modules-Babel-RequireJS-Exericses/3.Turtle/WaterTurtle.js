@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let Turtle = require('./Turtle')
 
 class WaterTurtle extends Turtle {
@@ -17,7 +18,8 @@ class WaterTurtle extends Turtle {
   }
 
   toString() {
-    return super.toString() + `\nCurrently inhabiting ${this._waterPool}`
+    return `${super.toString()}\`
+Currently inhabiting $\{this._waterPool}\``
   }
 }
 

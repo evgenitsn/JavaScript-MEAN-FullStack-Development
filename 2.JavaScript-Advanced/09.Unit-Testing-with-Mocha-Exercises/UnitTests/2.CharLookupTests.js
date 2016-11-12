@@ -1,7 +1,5 @@
-/**
- * Created by evgeni.tsn on 27-Oct-16.
- */
-
+/*eslint no-undef: */
+/*eslint no-unused-vars: */
 let lookupChar = require('../2.CharLookup').lookupChar
 let expect = require('chai').expect
 

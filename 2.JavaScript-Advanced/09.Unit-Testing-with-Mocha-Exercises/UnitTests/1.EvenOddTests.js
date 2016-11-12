@@ -1,6 +1,5 @@
-/**
- * Created by evgeni.tsn on 27-Oct-16.
- */
+/*eslint-env node*/
+/*eslint no-undef: */
 let isOddOrEven = require('../1.Еven-Odd').isOddOrEven
 let expect = require('chai').expect
 

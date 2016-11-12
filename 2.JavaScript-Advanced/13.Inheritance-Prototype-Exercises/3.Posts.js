@@ -23,7 +23,8 @@ class SocialMediaPost extends Post {
   }
 
   toString () {
-    let string = super.toString() + '\n'
+    let string = `${super.toString()}
+`
     string += `Rating: ${this.likes - this.dislikes}\n`
     if (this.comments.length > 0) {
       string += 'Comments:\n'
@@ -48,7 +49,8 @@ class BlogPost extends Post {
   }
 
   toString () {
-    return super.toString()+`\nViews: ${this.views}`
+    return `${super.toString()}\`
+Views: $\{this.views}\``
   }
 }
 //   return { Post, SocialMediaPost, BlogPost}

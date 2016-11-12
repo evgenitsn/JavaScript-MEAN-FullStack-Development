@@ -6,4 +6,5 @@ class Person {
     return `I'm ${this.name}`
   }
 }
+//noinspection Eslint
 module.exports = Person

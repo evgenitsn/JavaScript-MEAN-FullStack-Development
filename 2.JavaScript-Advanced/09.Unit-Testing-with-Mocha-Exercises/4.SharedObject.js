@@ -1,7 +1,5 @@
-/**
- * Created by evgeni.tsn on 27-Oct-16.
- */
-let $ = require('jquery')
+/*eslint no-undef: */
+//noinspection Eslint
 let sharedObject = {
   name: null,
   income: null,

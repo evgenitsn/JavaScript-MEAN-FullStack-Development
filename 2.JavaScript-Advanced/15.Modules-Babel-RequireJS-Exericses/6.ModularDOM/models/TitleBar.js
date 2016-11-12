@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let BaseElement = require('./BaseElement.js')
 
 class TitleBar extends BaseElement {

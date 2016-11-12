@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 class Checkbox {
   constructor(label, selector) {
     this._label = label

@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: */
 class Point {
   constructor(x, y) {
     this.x = x

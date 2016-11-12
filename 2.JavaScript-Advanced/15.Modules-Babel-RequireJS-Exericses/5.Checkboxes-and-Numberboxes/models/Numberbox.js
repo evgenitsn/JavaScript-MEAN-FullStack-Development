@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 class Numberbox {
   constructor (label, selector, minValue, maxValue) {
     this._label = label
@@ -9,7 +10,7 @@ class Numberbox {
     let that = this
     $(selector).change(function () {
       that.value = $(this).val()
-    });
+    })
   }
 
   get label () {

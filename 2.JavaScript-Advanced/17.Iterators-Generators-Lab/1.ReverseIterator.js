@@ -18,8 +18,9 @@ function reverseArrayIterator (arr) {
 
 // Example:
 let iterator = reverseArrayIterator([10, 20, 30])
+//noinspection Eslint
 while (true) {
   let item = iterator.next()
-  if (item.done) break
+  if (item.done) {break}
   console.log(item.value)
 }

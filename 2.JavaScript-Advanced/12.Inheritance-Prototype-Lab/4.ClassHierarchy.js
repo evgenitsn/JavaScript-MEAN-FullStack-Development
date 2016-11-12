@@ -1,3 +1,5 @@
+/*eslint no-undef: */
+//noinspection Eslint
 function classHierarchy(){
   class Figure{
     constructor(){
@@ -11,8 +13,7 @@ function classHierarchy(){
     }
 
     toString(){
-      let type = this.constructor.name
-      return type
+      return this.constructor.name
     }
   }
   class Circle extends Figure{
@@ -26,7 +27,7 @@ function classHierarchy(){
     }
 
     toString(){
-      return super.toString() + ` - radius: ${this.radius}`
+      return `${super.toString()}\` - radius: $\{this.radius}\``
     }
   }
   class Rectangle extends Figure{
@@ -39,7 +40,7 @@ function classHierarchy(){
       return this.width * this.height
     }
     toString(){
-      return super.toString() + ` - width: ${this.width}, height: ${this.height}`
+      return `${super.toString()}\` - width: $\{this.width}, height: $\{this.height}\``
     }
   }
 

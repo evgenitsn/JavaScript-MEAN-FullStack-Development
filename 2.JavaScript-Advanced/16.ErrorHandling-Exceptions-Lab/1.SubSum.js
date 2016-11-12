@@ -11,12 +11,12 @@ function subsum (collection, startIndex, endIndex) {
     endIndex = collection.length - 1
   }
 
-  let sum = 0;
+  let sum = 0
   for (let i = startIndex; i <= endIndex; i++) {
     sum += Number(collection[i])
   }
 
-  return sum;
+  return sum
 }
 
 // Examples:

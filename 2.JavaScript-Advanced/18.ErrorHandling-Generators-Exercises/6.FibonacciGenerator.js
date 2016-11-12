@@ -4,6 +4,7 @@ function* fibonacci() {
   let first = 1
   let second = 1
 
+  //noinspection Eslint
   while (true) {
     let temp = first + second
     first = second

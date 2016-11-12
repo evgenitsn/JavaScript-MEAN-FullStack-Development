@@ -1,7 +1,5 @@
-/**
- * Created by evgeni.tsn on 27-Oct-16.
- */
-
+/*eslint no-undef: */
+//noinspection Eslint
 let mathEnforcer = require('../3.MathEnforcer').mathEnforcer
 let expect = require('chai').expect
 

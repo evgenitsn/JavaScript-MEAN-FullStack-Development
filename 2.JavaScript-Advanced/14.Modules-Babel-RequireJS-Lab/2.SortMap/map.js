@@ -13,4 +13,5 @@ function mapSort (map, sortMethod) {
   return mapAsc
 }
 
+//noinspection Eslint
 module.exports = mapSort

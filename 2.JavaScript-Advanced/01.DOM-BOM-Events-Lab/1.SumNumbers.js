@@ -1,10 +1,6 @@
-/**
- * Created by evgeni.tsn on 20-Oct-16.
- */
-
+//noinspection Eslint
 function calc() {
-  let num1 = document.getElementById('num1').value;
-  let num2 = document.getElementById('num2').value;
-  let sum = Number(num1) + Number(num2);
-  document.getElementById('sum').value = sum;
+  let num1 = document.getElementById('num1').value
+  let num2 = document.getElementById('num2').value
+  document.getElementById('sum').value = Number(num1) + Number(num2)
 }

@@ -8,4 +8,5 @@ function createCalculator() {
 }
 
 //Exports function for unit testing
+//noinspection Eslint
 module.exports = {createCalculator}

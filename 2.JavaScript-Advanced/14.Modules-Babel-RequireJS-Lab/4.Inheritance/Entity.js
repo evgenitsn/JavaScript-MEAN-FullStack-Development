@@ -8,4 +8,5 @@ class Entity {
   }
 }
 
+//noinspection Eslint
 module.exports = Entity

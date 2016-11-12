@@ -24,7 +24,6 @@ class TimeSpan {
 
   toString () {
     let timeSpan = `${Math.trunc(this._seconds / 60 / 60)}:`
-    timeSpan += `0${Math.trunc(this._seconds / 60) % 60}`.slice(-2) + ':'
     timeSpan += `0${this._seconds % 60}`.slice(-2)
     return timeSpan
   }
@@ -38,9 +37,9 @@ class TimeSpan {
 
 // Examples
 try {
-  console.log('' + new TimeSpan(7, 8, 5))
-  console.log('' + new TimeSpan(12, 76, -5))
-  console.log('' + new TimeSpan(3, 2, {}))
+  console.log(`${new TimeSpan(7, 8, 5)}`)
+  console.log(`${new TimeSpan(12, 76, -5)}`)
+  console.log(`${new TimeSpan(3, 2, 2)}`)
 } catch (err) {
   console.log(err.message)
 }

@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let isSymmetric = require('../2.Check-Symmetry').isSymmetric
 let expect = require('chai').expect
 

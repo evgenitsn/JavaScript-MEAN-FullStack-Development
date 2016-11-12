@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: */
 let Employee = require('./Employee')
 
 class Branch {
@@ -20,7 +21,7 @@ class Branch {
   toString () {
     let output = `@ ${this.companyName}, ${this.branchName}, ${this.id}\n`
     output += 'Employed:\n'
-    if (this._employees.length == 0) {
+    if (this._employees.length === 0) {
       output += 'None…'
     } else {
       for (let employee of this.employees) {
@@ -31,5 +32,5 @@ class Branch {
     return output.trim()
   }
 }
-
+/*eslint-env node*/
 module.exports = Branch

@@ -22,7 +22,7 @@ function makeCandy (input) {
         throw new Error('Invalid amount of fillings')
       }
 
-      if (value.length == 0) {
+      if (value.length === 0) {
         value = null
       } else {
         for (let filling of tokens) {
@@ -41,7 +41,7 @@ function makeCandy (input) {
         throw new Error('Invalid setSpice')
       }
 
-      if (value.length == 0) {
+      if (value.length === 0) {
         value = null
       }
 

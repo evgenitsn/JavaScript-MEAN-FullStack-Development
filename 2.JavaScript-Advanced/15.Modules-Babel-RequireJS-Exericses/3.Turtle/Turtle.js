@@ -33,4 +33,5 @@ class Turtle {
   }
 }
 
+//noinspection Eslint
 module.exports = Turtle

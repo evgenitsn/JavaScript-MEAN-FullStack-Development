@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 let Turtle = require('./Turtle')
 
 class GalapagosTurtle extends Turtle {

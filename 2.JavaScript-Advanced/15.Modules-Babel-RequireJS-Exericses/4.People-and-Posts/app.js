@@ -1,4 +1,4 @@
-// This is working example with index.html
+/*eslint no-undef: */
 (function () {
   let Person = require('./models/Person.js')
   let Post = require('./models/Post.js')

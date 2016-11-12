@@ -1,13 +1,11 @@
-/**
- * Created by evgeni.tsn on 22-Oct-16.
- */
-
+/*eslint no-undef: */
+//noinspection Eslint
 let createBook = (function createBook() {
   let bookId = 1
   return function (selector, title, author, isbn) {
     $(selector)
       .append($('<div>')
-      .attr('id', 'book' + bookId++)
+      .attr('id', `book${bookId++}`)
       .append($('<p>').addClass('title').text(title))
       .append($('<p>').addClass('author').text(author))
       .append($('<p>').addClass('isbn').text(isbn))

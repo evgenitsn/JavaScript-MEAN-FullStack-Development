@@ -1,3 +1,4 @@
+//noinspection Eslint
 function createMixins() {
   function computerQualityMixin(classToExtend) {
     classToExtend.prototype.getQuality = function () {

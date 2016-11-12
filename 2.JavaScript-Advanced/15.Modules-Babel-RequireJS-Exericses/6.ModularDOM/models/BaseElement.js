@@ -1,3 +1,4 @@
+/*eslint no-undef: */
 class BaseElement {
   constructor () {
     if (new.target === BaseElement) {

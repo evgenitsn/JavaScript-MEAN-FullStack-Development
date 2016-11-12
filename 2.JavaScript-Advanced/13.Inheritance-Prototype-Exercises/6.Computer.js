@@ -1,3 +1,4 @@
+//noinspection Eslint
 function generateComputerClasses() {
   class PcComponent {
     constructor(manufacturer) {

@@ -1,8 +1,9 @@
 function* extractTags (html) {
   let regex = /<[^>]+>/g
   let match
+  //noinspection Eslint
   while (match = regex.exec(html))
-    yield match[0]
+    {yield match[0]}
 }
 
 // Example:

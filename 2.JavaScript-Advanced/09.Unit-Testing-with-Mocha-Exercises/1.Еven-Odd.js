@@ -1,6 +1,4 @@
-/**
- * Created by evgeni.tsn on 27-Oct-16.
- */
+/*eslint no-undef: */
 function isOddOrEven(string) {
   if (typeof(string) !== 'string') {
     return undefined

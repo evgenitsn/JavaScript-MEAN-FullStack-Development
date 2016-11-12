@@ -1,3 +1,4 @@
+//noinspection Eslint
 let Extensible = (function () {
   let uniqueId = 0
 

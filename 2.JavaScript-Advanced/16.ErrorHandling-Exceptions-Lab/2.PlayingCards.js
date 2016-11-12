@@ -36,8 +36,8 @@ class Card {
 }
 
 // Examples:
-console.log('' + new Card('A', 'S'))
-console.log('' + new Card('10', 'H'))
+console.log(`${new Card('A', 'S')}`)
+console.log(`${new Card('10', 'H')}`)
 try {
   new Card('1', 'C')
 } catch (err) {

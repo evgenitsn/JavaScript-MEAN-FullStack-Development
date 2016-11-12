@@ -1,5 +1,5 @@
 function createCar (commands) {
-  let carCommands = ( () => {
+  let carCommands = (() => {
     let allCars = new Map()
 
     function create (newObj, token, parent) {
@@ -18,17 +18,19 @@ function createCar (commands) {
     function print (objName) {
       let obj = allCars.get(objName)
       let keys = Object.keys(allCars.get(objName))
-        .map(k => `${k}:${allCars.get(objName)[k]}`)
+                       .map(k => `${k}:${allCars.get(objName)[k]}`)
 
       let proto = obj
+      //noinspection Eslint
       while (proto = Object.getPrototypeOf(proto)) {
-        let object =Object.keys(proto).map(k => `${k}:${proto[k]}`);
+        let object = Object.keys(proto).map(k => `${k}:${proto[k]}`)
         keys = keys.concat(object)
       }
 
       console.log(keys.join(', '))
     }
-    return {create, set, print}
+
+    return { create, set, print }
   })()
 
   for (let command of commands) {

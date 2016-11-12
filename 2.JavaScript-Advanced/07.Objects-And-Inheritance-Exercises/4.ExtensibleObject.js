@@ -1,3 +1,4 @@
+//noinspection Eslint
 function solve () {
   let obj = {}
 

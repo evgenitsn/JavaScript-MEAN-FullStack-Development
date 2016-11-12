@@ -1,6 +1,7 @@
 function* random (seed) {
   let key = 4871 * 7919
   let x1 = seed
+  //noinspection Eslint
   while (true) {
     x1 = (x1 * x1) % key
     yield x1 % 100

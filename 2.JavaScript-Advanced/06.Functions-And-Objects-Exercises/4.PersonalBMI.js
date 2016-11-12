@@ -36,4 +36,4 @@ function personalBmi (personName, age, weight, height) {
   return result
 }
 
-console.log(personalBmi('NEZNAMBRAT', 4, 62, 150))
+console.log(personalBmi('Honey Boo Boo', 9, 57, 137))

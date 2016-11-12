@@ -19,7 +19,7 @@ class Console {
         throw new TypeError('No string format given!')
       }
       else {
-        var placeholders = message.match(this.placeholder).sort(function (a, b) {
+        let placeholders = message.match(this.placeholder).sort(function (a, b) {
           a = Number(a.substring(1, a.length - 1))
           b = Number(b.substring(1, b.length - 1))
           return a - b
@@ -43,4 +43,5 @@ class Console {
     }
   }
 }
+//noinspection Eslint
 module.exports = { Console }
