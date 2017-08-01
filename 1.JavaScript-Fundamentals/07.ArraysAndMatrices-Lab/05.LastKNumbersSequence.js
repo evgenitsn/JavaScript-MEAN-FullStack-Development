@@ -1,20 +1,14 @@
-function lastKNumbersSequence ([num, len]) {
-  [len, num].map(Number)
-  let arr = [1]
-
-  let calNum = function (arr, index, len) {
-    let start = (index <= len) ? 0 : index - len
-    let tempArray = arr.slice(start, start + len)
-    let result = tempArray.reduce((a, b) => a + b)
-    return result
+function LastKNumbersSequence2(n,k){
+  let result=[];
+  let sum=1;
+  for (let i=0; i<n;i++) {
+    for(let j=0; j<k; j++) {
+      sum += !(i-(j+1) < 0) ? result[i-(j+1)] : 0
+    }
+    result.push(sum)
+    sum=0
   }
-
-  for (let i = 1; i < num; i++) {
-    arr[i] = calNum(arr, i, len)
-  }
-  for (let n of arr) {
-    console.log(n)
-  }
+  console.log(result.join(' '))
 }
 
-lastKNumbersSequence([6, 3])
+LastKNumbersSequence2(8,3)
